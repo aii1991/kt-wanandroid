@@ -48,6 +48,5 @@ dependencies {
     implementation rootProject.ext.testLibs
     implementation rootProject.ext.commonLibs
     implementation rootProject.ext.networkLibs
-    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     kapt rootProject.ext.annotationProcessorLibs
 }

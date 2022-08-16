@@ -15,7 +15,7 @@ import registerTextChangedListener
 class LoginFragment : BaseMVIFragment<LoginVM, FragmentLoginBinding>() {
 
     override fun setupView(savedInstanceState: Bundle?) {
-        mDatabind.includeToolbar.toolbar.initClose { nav().navigateUp() }
+        mDatabind.includeToolbar.toolbar.initClose(titleStr = "登录") { nav().navigateUp() }
     }
 
     override fun bindListener(){

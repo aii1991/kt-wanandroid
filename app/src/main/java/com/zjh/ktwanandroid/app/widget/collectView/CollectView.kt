@@ -1,4 +1,4 @@
-package com.zjh.ktwanandroid.app.widget.collectView
+package com.zjh.ktwanandroid.app.widget.collectview
 
 import android.content.Context
 import android.util.AttributeSet

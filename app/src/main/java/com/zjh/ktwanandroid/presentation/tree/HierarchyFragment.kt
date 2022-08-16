@@ -9,7 +9,7 @@ import com.zjh.ktwanandroid.KEY_ARTICLE_HIERARCHY
 import com.zjh.ktwanandroid.KEY_TAB_INDEX
 import com.zjh.ktwanandroid.R
 import com.zjh.ktwanandroid.app.base.BaseMVIFragment
-import com.zjh.ktwanandroid.app.widget.itemDecoration.SpaceItemDecoration
+import com.zjh.ktwanandroid.app.widget.itemdecoration.SpaceItemDecoration
 import com.zjh.ktwanandroid.databinding.FragmentHierarchyBinding
 import com.zjh.ktwanandroid.domain.model.ArticleHierarchy
 import com.zjh.ktwanandroid.presentation.adapter.HierarchyAdapter

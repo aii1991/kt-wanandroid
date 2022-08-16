@@ -57,7 +57,6 @@ import net.lucode.hackware.magicindicator.buildins.commonnavigator.indicators.Li
  * 初始化普通的toolbar 只设置标题
  */
 fun Toolbar.init(titleStr: String = ""): Toolbar {
-    setBackgroundColor(SettingUtil.getColor(App.instance))
     title = titleStr
     return this
 }
@@ -70,7 +69,6 @@ fun Toolbar.initClose(
     backImg: Int = R.drawable.ic_back,
     onBack: (toolbar: Toolbar) -> Unit
 ): Toolbar {
-    setBackgroundColor(SettingUtil.getColor(App.instance))
     title = titleStr.toHtml()
     setNavigationIcon(backImg)
     setNavigationOnClickListener { onBack.invoke(this) }
@@ -194,8 +192,6 @@ fun ViewPager2.init(
 }
 
 fun BottomNavigationView.init(navigationItemSelectedAction: (Int) -> Unit): BottomNavigationView {
-    itemIconTintList = SettingUtil.getColorStateList(SettingUtil.getColor(App.instance))
-    itemTextColor = SettingUtil.getColorStateList(App.instance)
     setOnItemSelectedListener {
         navigationItemSelectedAction.invoke(it.itemId)
         true

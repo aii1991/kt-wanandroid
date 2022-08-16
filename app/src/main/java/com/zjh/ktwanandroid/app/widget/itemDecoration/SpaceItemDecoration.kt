@@ -1,4 +1,4 @@
-package com.zjh.ktwanandroid.app.widget.itemDecoration
+package com.zjh.ktwanandroid.app.widget.itemdecoration
 
 import android.annotation.SuppressLint
 import android.graphics.Canvas

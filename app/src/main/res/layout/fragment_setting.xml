@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".presentation.mine.about.SettingFragment">
+
+    <include
+        android:id="@+id/include_toolbar"
+        layout="@layout/include_toolbar" />
+
+    <TextView
+        android:text="基本设置"
+        android:id="@+id/tv_title_setting"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:textSize="16sp"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp" />
+
+    <LinearLayout
+        android:id="@+id/ll_theme_color"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_height="60dp">
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:text="主题颜色"
+                android:textSize="18sp"
+                android:textColor="@color/colorBlack333"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="设置app的主题颜色"
+                android:textSize="16sp"
+                android:textColor="@color/texttipColor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <com.zjh.ktwanandroid.app.widget.colorcircleview.ColorCircleView
+            android:layout_weight="0"
+            android:id="@+id/colorView"
+            android:layout_width="44dp"
+            android:layout_height="44dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_login_out"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:layout_height="60dp">
+        <TextView
+            android:text="退出"
+            android:textSize="18sp"
+            android:textColor="@color/colorBlack333"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="退出登录"
+            android:textSize="16sp"
+            android:textColor="@color/texttipColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <TextView
+        android:text="关于"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:textSize="16sp"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:layout_height="60dp">
+        <TextView
+            android:text="版本"
+            android:textSize="18sp"
+            android:textColor="@color/colorBlack333"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_version"
+            tools:text="v1.0.0"
+            android:textSize="16sp"
+            android:textColor="@color/texttipColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:layout_height="60dp">
+        <TextView
+            android:text="作者"
+            android:textSize="18sp"
+            android:textColor="@color/colorBlack333"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            tools:text="v1.0.0"
+            android:textSize="16sp"
+            android:id="@+id/tv_desc"
+            android:text="一个在android、前端、小程序游走的攻城狮"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_project_code"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:layout_height="60dp">
+        <TextView
+            android:text="项目源码"
+            android:textSize="18sp"
+            android:textColor="@color/colorBlack333"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            tools:text="v1.0.0"
+            android:textSize="16sp"
+            android:id="@+id/tv_github"
+            android:text="https://github.com/aii1991/ktAndroid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:layout_height="60dp">
+        <TextView
+            android:text="版权声明"
+            android:textSize="18sp"
+            android:textColor="@color/colorBlack333"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textSize="16sp"
+            android:text="仅作个人及非商业用途"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</LinearLayout>

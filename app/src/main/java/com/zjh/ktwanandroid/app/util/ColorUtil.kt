@@ -104,4 +104,20 @@ object ColorUtil {
         }
     }
 
+
+    fun toHexEncoding(color: Int): String {
+        val sb = StringBuffer()
+        var r: String = Integer.toHexString(Color.red(color))
+        var g: String = Integer.toHexString(Color.green(color))
+        var b: String = Integer.toHexString(Color.blue(color))
+        r = if (r.length == 1) "0$r" else r
+        g = if (g.length == 1) "0$g" else g
+        b = if (b.length == 1) "0$b" else b
+        sb.append("#")
+        sb.append(r)
+        sb.append(g)
+        sb.append(b)
+        return sb.toString()
+    }
+
 }

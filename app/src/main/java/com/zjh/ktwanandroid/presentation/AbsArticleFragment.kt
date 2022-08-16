@@ -15,7 +15,7 @@ import com.zjh.ktwanandroid.app.base.BaseMVIFragment
 import com.zjh.ktwanandroid.app.base.BaseMVIVM
 import com.zjh.ktwanandroid.app.base.FooterAdapter
 import com.zjh.ktwanandroid.app.ext.jumpByLogin
-import com.zjh.ktwanandroid.app.widget.itemDecoration.SpaceItemDecoration
+import com.zjh.ktwanandroid.app.widget.itemdecoration.SpaceItemDecoration
 import com.zjh.ktwanandroid.domain.model.Article
 import com.zjh.ktwanandroid.presentation.adapter.ArticleAdapter
 import com.zjh.ktwanandroid.presentation.webview.WebFragment

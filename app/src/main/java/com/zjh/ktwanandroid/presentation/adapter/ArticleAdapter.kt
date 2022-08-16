@@ -3,7 +3,7 @@ package com.zjh.ktwanandroid.presentation.adapter
 import androidx.recyclerview.widget.DiffUtil
 import com.zjh.ktwanandroid.R
 import com.zjh.ktwanandroid.app.base.BasePagingAdapter
-import com.zjh.ktwanandroid.app.widget.collectView.CollectView
+import com.zjh.ktwanandroid.app.widget.collectview.CollectView
 import com.zjh.ktwanandroid.domain.model.Article
 import com.zjh.ktwanandroid.domain.model.enums.ArticleType
 import me.hgj.jetpackmvvm.ext.util.toHtml

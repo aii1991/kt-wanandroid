@@ -55,50 +55,13 @@ object DataStore {
         kv.encode("login", isLogin)
     }
 
-    /**
-     * 是否是第一次登陆
-     */
-    fun isFirst(): Boolean {
+    fun setThemeColor(color:String){
         val kv = MMKV.mmkvWithID("app")
-        return kv.decodeBool("first", true)
-    }
-    /**
-     * 是否是第一次登陆
-     */
-    fun setFirst(first:Boolean): Boolean {
-        val kv = MMKV.mmkvWithID("app")
-        return kv.encode("first", first)
+        kv.encode("theme_color",color)
     }
 
-    /**
-     * 首页是否开启获取指定文章
-     */
-    fun isNeedTop(): Boolean {
+    fun getThemeColor():String{
         val kv = MMKV.mmkvWithID("app")
-        return kv.decodeBool("top", true)
-    }
-    /**
-     * 设置首页是否开启获取指定文章
-     */
-    fun setIsNeedTop(isNeedTop:Boolean): Boolean {
-        val kv = MMKV.mmkvWithID("app")
-        return kv.encode("top", isNeedTop)
-    }
-    /**
-     * 获取搜索历史缓存数据
-     */
-    fun getSearchHistoryData(): ArrayList<String> {
-        val kv = MMKV.mmkvWithID("cache")
-        val searchCacheStr =  kv.decodeString("history")
-        if (!TextUtils.isEmpty(searchCacheStr)) {
-            return Gson().fromJson(searchCacheStr
-                , object : TypeToken<ArrayList<String>>() {}.type)
-        }
-        return arrayListOf()
-    }
-
-    fun setSearchHistoryData(searchResponseStr: String) {
-        val kv = MMKV.mmkvWithID("cache")
-        kv.encode("history",searchResponseStr)
+        return kv.decodeString("theme_color","")
     }
 }

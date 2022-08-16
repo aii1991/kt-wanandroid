@@ -6,7 +6,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.blankj.utilcode.util.ConvertUtils
 import com.zjh.ktwanandroid.R
 import com.zjh.ktwanandroid.app.base.BaseMVIFragment
-import com.zjh.ktwanandroid.app.widget.itemDecoration.SpaceItemDecoration
+import com.zjh.ktwanandroid.app.widget.itemdecoration.SpaceItemDecoration
 import com.zjh.ktwanandroid.databinding.FragmentNavigationBinding
 import com.zjh.ktwanandroid.domain.model.Article
 import com.zjh.ktwanandroid.presentation.adapter.NavigationAdapter

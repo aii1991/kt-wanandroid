@@ -66,4 +66,12 @@ class MineRepositoryImp(private val remoteDataSource: RemoteDataSource, database
     override suspend fun deleteArticle(article: Article) {
         articleRepository.deleteArticle(article)
     }
+
+    override fun saveThemeColor(color: String) {
+        DataStore.setThemeColor(color)
+    }
+
+    override fun getThemeColor(): String {
+        return DataStore.getThemeColor()
+    }
 }

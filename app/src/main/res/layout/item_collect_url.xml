@@ -53,7 +53,7 @@
                 android:textSize="13dp"
                 tools:text="https:\/\/www.wanandroid.com\/blog\/show\" />
 
-            <com.zjh.ktwanandroid.app.widget.collectView.CollectView
+            <com.zjh.ktwanandroid.app.widget.collectview.CollectView
                 android:id="@+id/item_collect_url_collect"
                 android:layout_width="24dp"
                 android:layout_height="24dp" />

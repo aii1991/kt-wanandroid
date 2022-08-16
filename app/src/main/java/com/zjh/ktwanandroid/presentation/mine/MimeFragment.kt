@@ -38,7 +38,7 @@ class MimeFragment : BaseMVIFragment<MineVM, FragmentMimeBinding>() {
                 })
             }
             llSetting.setOnClickListener {
-                nav().navigateAction(R.id.action_main_fragment_to_aboutFragment)
+                nav().navigateAction(R.id.action_main_fragment_to_settingFragment)
             }
             mineLinear.setOnClickListener{
                 nav().jumpByLogin {}

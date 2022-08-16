@@ -23,4 +23,6 @@ interface MineRepository {
     suspend fun collectArticle(articleId: Int): Any?
     suspend fun unCollectArticle(articleId: Int): Any?
     suspend fun deleteArticle(article:Article)
+    fun saveThemeColor(color:String)
+    fun getThemeColor():String
 }

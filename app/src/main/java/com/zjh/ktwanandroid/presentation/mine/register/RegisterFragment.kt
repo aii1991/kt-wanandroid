@@ -14,7 +14,7 @@ import registerTextChangedListener
 @AndroidEntryPoint
 class RegisterFragment : BaseMVIFragment<RegisterVM,FragmentRegisterBinding>() {
     override fun setupView(savedInstanceState: Bundle?) {
-        mDatabind.includeToolbar.toolbar.initClose { nav().navigateUp() }
+        mDatabind.includeToolbar.toolbar.initClose(titleStr = "注册") { nav().navigateUp() }
     }
 
     override fun bindListener(){

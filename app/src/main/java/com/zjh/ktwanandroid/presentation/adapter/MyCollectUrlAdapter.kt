@@ -3,7 +3,7 @@ package com.zjh.ktwanandroid.presentation.adapter
 import com.chad.library.adapter.base.BaseQuickAdapter
 import com.chad.library.adapter.base.viewholder.BaseViewHolder
 import com.zjh.ktwanandroid.R
-import com.zjh.ktwanandroid.app.widget.collectView.CollectView
+import com.zjh.ktwanandroid.app.widget.collectview.CollectView
 import com.zjh.ktwanandroid.domain.model.CollectUrl
 import me.hgj.jetpackmvvm.ext.util.toHtml
 

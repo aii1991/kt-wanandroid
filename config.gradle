@@ -135,7 +135,16 @@ ext {
             "recyclerview-animators": "jp.wasabeef:recyclerview-animators:4.0.2",
             //指示器库
             "magicIndicator": 'com.github.hackware1993:MagicIndicator:1.7.0',
-            "flexbox": "com.google.android.flexbox:flexbox:3.0.0"
+            "flexbox": "com.google.android.flexbox:flexbox:3.0.0",
+
+            //换肤
+            "skin-support": "skin.support:skin-support:4.0.5",
+            "skin-support-appcompat": "skin.support:skin-support-appcompat:4.0.5",
+//            "skin-support-design": "skin.support:skin-support-design:4.0.5", //存在找不到资源Id问题,所以将代码clone下来自行修改了
+            "skin-support-cardview": "skin.support:skin-support-cardview:4.0.5",
+            "skin-support-constraint-layout": "skin.support:skin-support-constraint-layout:4.0.5",
+
+            "colorPicker": "com.github.Dhaval2404:ColorPicker:2.3"
     ]
 
     annotationProcessorDeps = [

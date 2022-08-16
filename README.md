@@ -1,4 +1,4 @@
-# kt+mvi+jetpack版 玩andorid
+# kt+mvi+jetpack版 玩android
 
 ## 基于单向数据流和唯一数据源的MVI架构
 
@@ -23,12 +23,21 @@
 
 ![演示](./img/ys.gif)
 
-## 包结构(参考[Android Architecture Components](https://developer.android.com/topic/architecture#recommended-app-arch))
+## [Apk下载](./apk/wanandroid-v1.0.0.apk)
+
+## 包结构(参考[Android-Clean-Architecture-MVVM-Hilt-RX](https://github.com/ZahraHeydari/Android-Clean-Architecture-MVVM-Hilt-RX))
 
 - `data` 数据层
 - `di` 依赖注入
 - `domain` 连接`data`与`presentation`
 - `presentation` 界面相关
+
+## 项目简介
+
+- 网络层采用`Retrofit+协程`的方式获取来自网络的数据
+- 图片加载采用`coil`框架，其使用简便且轻量。加载图片只需调用其拓展函数`imageView.load("https://www.example.com/image.jpg")`
+- 用户数据缓存采用腾讯的`MMKV`
+- 界面采用`jetpack navigation 的单activity + 多fragment`
 
 ## 版本控制
 
@@ -42,12 +51,16 @@
 | 广场、每日一问、体系、导航            | &#9745; |
 | 公众号文章列表                       | &#9745; |
 | 文章详情                            | &#9745; |
+| 文章详情加入收藏、分享                 | &#9745; |
 | 我的、 我的收藏                      | &#9745; |
-| 换皮肤                               | &#9744; |
+| 换皮肤                               | &#9745; |
 
-## 参与贡献
+## 感谢
 
 1. [JetpackMvvm](https://github.com/hegaojian/JetpackMvvm)
 2. [Android-Clean-Architecture-MVVM-Hilt-RX](https://github.com/ZahraHeydari/Android-Clean-Architecture-MVVM-Hilt-RX)
 3. [wanandroid](https://github.com/hongyangAndroid/wanandroid)
 4. [Android Architecture Components](https://developer.android.com/topic/architecture#recommended-app-arch)
+5. [Android-skin-support](https://github.com/ximsfei/Android-skin-support)
+6. [retrofit](https://github.com/square/retrofit)
+7. [coil-kt](https://github.com/coil-kt/coil)
